@@ -11,6 +11,9 @@ class MVCPattern {
         controller.setStudentName("Vikram Sharma");
 
         controller.updateView();
+
+        controller.setStudentEmail("v.sharma@example.net");
+        controller.updateView();
     }
 
     private static Student retriveStudentFromDatabase() {

@@ -22,9 +22,13 @@ class StudentController {
     public String getStudentRollNo() {
         return model.getRollNo();
     }
+    public String getStudentEmail(){return model.getEmail();}
+    public void setStudentEmail(String email) {
+        model.setEmail(email);
+    }
 
     public void updateView() {
-        view.printStudentDetails(model.getName(), model.getRollNo());
+        view.printStudentDetails(model.getName(), model.getRollNo(), model.getEmail());
     }
 } 
   
